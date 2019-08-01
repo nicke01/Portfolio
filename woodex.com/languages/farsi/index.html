@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>WOODEX</title>
+
+	<meta charset="utf-8">
+	<meta http-equiv="Content-language" content="ru-RU">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<meta name="description" content="شما می توانید سفارش چوب از مقاطع مختلف و طول چوب با کیفیت. تمام تابلوهای گذشت معاینه مناسب...">
+	<meta name="keynames" content="woodex چوب جنگل خرید فروش vudeks در آستراخان صنوبر سفارش لبه سنگ سبلنجس هیئت مدیره">
+	<meta name="author" content="nikolai.only.original@mail.ru">
+
+	<link rel="shortcut icon" href="..\design\pictures\HugeIcon.png">
+	<link rel="stylesheet" href="..\design\MainPageFarsi.css">
+</head>
+<body>
+
+	<div id="top">
+		<div id="heading">
+			<div id="phone-menu">
+				<button class="menu-toggle" id="t"></button>
+
+				<nav>
+				<div id="a">&#8249;</div>
+				  <ul class="menu" id="m">
+				   	<li data-text="درباره ما"><a href="./AboutUs.html">درباره ما</a></li>
+				    <li data-text="دایرکتوری"><a href="./Catalog.html">دایرکتوری</a></li>
+				    <li data-text="پرداخت و حمل و نقل"><a href="./Payment.html">اطلاعات تماس</a></li>
+				    <li data-text="اطلاعات تماس"><a href="./Contacts.html">زبان</a></li>
+				    <li data-text="زبان" id="l">زبان</li>
+				  </ul>
+				  <ul class="lang-change" id ="c">
+				  	<li data-text="Русский"><a href="../russian/MainPage.html">Русский<a></li>
+				  	<li data-text="English"><a href="../english/MainPage.html">English</a></li>
+				  	<li data-text="فارسی"><a href="../farsi/MainPage.html">فارسی</a></li>
+				  	<li data-text="العربية"><a href="../arab/MainPage.html">العربية</a></li>
+				  	<li data-text="Türk"><a href="../turkish/MainPage.html">Türk</a></li>
+				  </ul>
+				</nav>
+
+				<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+				<script>
+					$('button').on('click', function(){$('body').toggleClass('open');});
+				</script>
+				<script>
+					var l = document.getElementById("l");
+					var c = document.getElementById("c");
+					var m = document.getElementById("m");
+					var t = document.getElementById("t");
+					var a = document.getElementById("a");
+					l.onclick = function change()
+					{
+						c.setAttribute("style", "display: block;");
+						m.setAttribute("style", "display: none");
+						t.setAttribute("style", "display: none");
+						a.setAttribute("style", "display: block");
+					}
+					a.onclick = function second_change()
+					{
+						c.setAttribute("style", "display: none;");
+						m.setAttribute("style", "display: block");
+						t.setAttribute("style", "display: block");
+						a.setAttribute("style", "display: none");
+					}
+				</script>
+			</div>
+			<a title="صفحه اصلی" href="./MainPage.html"><img src="..\design\pictures\Logo.PNG"></a>
+		</div>
+
+		<div id="menu">
+			<ul id="top-menu">
+				<li class="menu_it"><a href="./AboutUs.html">درباره ما</a></li>
+				<li class="menu_it"><a href="./Catalog.html">دایرکتوری</a></li>
+				<li class="menu_it"><a href="./Payment.html">پرداخت و حمل و نقل</a></li>
+				<li class="menu_it"><a href="./Contacts.html">اطلاعات تماس</a></li>
+				<li class="menu_it"><a>زبان</a>
+					<ul id="top-lang">
+						<li><a href="../russian/MainPage.html"><img src="..\design\pictures\lang\russia.png">Русский</a></li>
+						<li><a href="../english/MainPage.html"><img src="..\design\pictures\lang\english.png">English</a></li>
+						<li><a href="../farsi/MainPage.html"><img src="..\design\pictures\lang\farsi.png">فارسی</a></li>
+						<li><a href="../arab/MainPage.html"><img src="..\design\pictures\lang\arabish.png">العربية</a></li>
+						<li><a href="../turkish/MainPage.html"><img src="..\design\pictures\lang\turkish.png">Türk</a></li>
+					</ul>
+				</li>	
+			</ul>
+		
+		</div>
+	</div>
+
+	<div id="forest-title">
+		<p>"LTD" WOODEX</p> <p>برای فروش <br>چوب <br>سرزمین پرم <br>آرخانگلسک</p>	
+	</div>
+
+	<div class="main" id="quality">
+		<div id="first-img">
+			<img src="..\design\pictures\MainPhotos\MP7.jpg">
+		</div>
+		<div id="first-text">
+			<p>با کیفیت تضمین شده</p> <p>شرکت "Woodex" ارائه می دهد و محصولات را به دقت تولید شده توسط ما تجربه حرفه ای. انواع چوب گذشت معاینه مناسب با این نتیجه که شما تنها محصول ثابت شده است.</p>
+			<a href="./AboutUs.html"><p>ادامه مطلب</p></a>
+		</div>
+	</div>
+
+	<div class="main" id="demand">
+		<img src="..\design\pictures\MainPhotos\MP7.jpg">
+		<div id="second-text">
+			<p>تقاضا برای محصولات ما</p> <p>شرکت ما ارائه می دهد چوب نرم چوب یکی از محبوب ترین مواد در صنعت مبلمان و ساخت سازه های چوبی و ساخت و ساز صنعت.</p>		
+			<a href="./AboutUs.html"><p>ادامه مطلب</p></a>
+		</div>
+		<div id="second-img">
+			<img src="..\design\pictures\MainPhotos\MP30.jpg">
+		</div>
+	</div>
+
+	<div class="main" id="prepare">
+		<div id="third-img">
+			<img src="..\design\pictures\MainPhotos\MP27.jpg">
+		</div>
+		<div id="third-text">
+			<p>آماده سازی خشک جنگل</p> <p>چوب مواد خشک را در یک کفش راه در خیابان و یا با استفاده از کوره های مخصوص و خشک کردن اتاق. حداقل مقدار رطوبت برای جلوگیری از شکنندگی چوب.</p>
+			<a href="./AboutUs.html"><p>ادامه مطلب</p></a>
+		</div>
+	</div>
+
+
+	<div id="dignity">
+		<p>
+			مزایای لذت می برد توسط ما چوب
+		</p>
+		<p> 
+			مزیت اصلی هر چوب طبیعی و سمی ایمنی. این خواص می تواند فراتر از هر گونه مصنوعی آنالوگ. چوب صنوبر دارای مزایای غیر قابل انکار است:
+		</p>
+		<p>
+			&nbsp;&nbsp;-&nbsp;&nbsp;سبکی چگالی پایین و فقیر هدایت حرارتی;<br>
+			&nbsp;&nbsp;-&nbsp;&nbsp;بسته گره از قطر کوچک ایجاد یک الگوی جالب;<br>
+			&nbsp;&nbsp;-&nbsp;&nbsp;غیر معمول رنگ چوب در ابتدا به نظر می رسد در داخل کشور است. صنوبر می تواند به صورتی نور یا نور طلایی رنگ;<br>
+			&nbsp;&nbsp;-&nbsp;&nbsp;همگن بافت دادن چوب منحصر به فرد پابرجايي و صافی.<br>
+		</p>
+	</div>
+
+	<div id="forest"></div>
+
+	
+	<div id="bottom-block">
+
+		<div id="contacts">
+			<span>اطلاعات تماس</span>
+			<div  id="phone">
+				<img src="..\design\pictures\phone.png">
+				<div class="bottom-text">تلفن:</div>
+				<div><a href="#">8(908)611-92-51</a></div>
+			</div>
+
+			<div id="mail">
+				<img src="..\design\pictures\mail.png">
+				<div class="bottom-text">ایمیل:</div>
+				<div><a href="mailto:woodex_info@mail.ru">woodex_info@mail.ru</a></div>
+			</div>
+		</div>
+
+		<div id="address">
+			<span class="bottom-text">آدرس</span>
+			<div>
+				<img src="..\design\pictures\location.png">
+				<span>آستراخان خیابان Yuriya Selenskogo/Bakhtemirskiy است. 13/5 دفتر 306</span>
+			</div>
+		</div>
+
+		<div id="bottom-lang">
+			<div class="bottom-text"> زبان</div>
+			<div>
+				<select id="sel" onchange="op()">
+					<option>Русский</option>
+					<option>English</option>
+					<option selected>فارسی</option>
+					<option>العربية</option>
+					<option>Türk</option>
+				</select>
+			</div>
+		</div>
+
+	</div>
+
+	<script>
+		
+		function op()
+		{
+			var u = document.getElementById('sel');
+			switch (u.selectedIndex) {
+				case 0:
+					window.location.href = "../russian/MainPage.html";
+					break;
+				case 1:
+					window.location.href = "../english/MainPage.html";
+					break;
+				case 2:
+					window.location.href = "../farsi/MainPage.html";
+					break;
+				case 3:
+					window.location.href = "../arab/MainPage.html";
+					break;
+				case 4:
+					window.location.href = "../turkish/MainPage.html";
+					break;				
+			}
+		}
+	</script>
+
+</body>
+</html>

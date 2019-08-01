@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>WOODEX</title>
+	<meta charset="utf-8">
+	<meta http-equiv="Content-language" content="tü-TÜ">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<meta name="description" content="Biz sipariş kereste, farklı kesit ve uzunlukları kaliteli ahşap çeşitleri. Tüm kereste geçti, ilgili uzmanlık...">
+	<link rel="shortcut icon" href="..\design\pictures\HugeIcon.png">
+	<link rel="stylesheet" href="..\design\ContactsTurk.css">
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDC5EvdgKeEf7COG59Jnd06_I6H4U_R9N8"></script>
+<body>
+
+	<div id="top">
+		<div id="heading">
+			<div id="phone-menu">
+				<button class="menu-toggle" id="t"></button>
+
+				<nav>
+				<div id="a">&#8249;</div>
+				  <ul class="menu" id="m">
+				    <li data-text="BİZİM HAKKIMIZDA"><a href="./AboutUs.html">BİZİM HAKKIMIZDA</a></li>
+				    <li data-text="KATALOG"><a href="./Catalog.html">KATALOG</a></li>
+				    <li data-text="ÖDEME VE TESLİMAT"><a href="./Payment.html">ÖDEME VE TESLİMAT</a></li>
+				    <li data-text="KİŞİLER"><a href="./Contacts.html">KİŞİLER</a></li>
+				    <li data-text="DİL" id="l">DİL</li>
+				  </ul>
+				  <ul class="lang-change" id ="c">
+				  	<li data-text="Русский"><a href="../russian/Contacts.html">Русский<a></li>
+				  	<li data-text="English"><a href="../english/Contacts.html">English</a></li>
+				  	<li data-text="فارسی"><a href="../farsi/Contacts.html">فارسی</a></li>
+				  	<li data-text="العربية"><a href="../arab/Contacts.html">العربية</a></li>
+				  	<li data-text="Türk"><a href="../turkish/Contacts.html">Türk</a></li>
+				  </ul>
+				</nav>
+
+				<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+				<script>
+					$('button').on('click', function(){$('body').toggleClass('open');});
+				</script>
+				<script>
+					var l = document.getElementById("l");
+					var c = document.getElementById("c");
+					var m = document.getElementById("m");
+					var t = document.getElementById("t");
+					var a = document.getElementById("a");
+					l.onclick = function change()
+					{
+						c.setAttribute("style", "display: block;");
+						m.setAttribute("style", "display: none");
+						t.setAttribute("style", "display: none");
+						a.setAttribute("style", "display: block");
+					}
+					a.onclick = function second_change()
+					{
+						c.setAttribute("style", "display: none;");
+						m.setAttribute("style", "display: block");
+						t.setAttribute("style", "display: block");
+						a.setAttribute("style", "display: none");
+					}
+				</script>
+			</div>
+			<a title="ANA SAYFA" href="./MainPage.html"><img src="..\design\pictures\Logo.PNG"></a>
+		</div>
+
+		<div id="menu">
+			<ul id="top-menu">
+				<li class="menu_it"><a href="./AboutUs.html">BİZİM HAKKIMIZDA</a></li>
+				<li class="menu_it"><a href="./Catalog.html">KATALOG</a></li>
+				<li class="menu_it"><a href="./Payment.html">ÖDEME VE TESLİMAT</a></li>
+				<li class="menu_it"><a href="./Contacts.html">KİŞİLER</a></li>
+				<li class="menu_it"><a>DİL</a>
+					<ul id="top-lang">
+						<li><a href="../russian/Contacts.html"><img src="..\design\pictures\lang\russia.png">Русский</a></li>
+						<li><a href="../english/Contacts.html"><img src="..\design\pictures\lang\english.png">English</a></li>
+						<li><a href="../farsi/Contacts.html"><img src="..\design\pictures\lang\farsi.png">فارسی</a></li>
+						<li><a href="../arab/Contacts.html"><img src="..\design\pictures\lang\arabish.png">العربية</a></li>
+						<li><a href="../turkish/Contacts.html"><img src="..\design\pictures\lang\turkish.png">Türk</a></li>
+					</ul>
+				</li>	
+			</ul>
+		
+		</div>
+	</div>
+
+	<div id="content">
+		<div class="requisite" id="first-rq">
+			<p><span>Telefonu sanatçı:</span> <span>8(908)611-92-51 Saprykin Dimitri Aleksandrovich</span></p>
+			<p><span>WhatsApp:</span> <span>8(937)823-50-01</span></p>
+			<p><span>Posta kodu:</span> <span>414056</span></p>
+			<p><span>E-posta adresi:</span> <span>woodex_info@mail.ru</span></p>
+			<p><span>Vergi Kimlik Numarası/Neden kodu kayıt etme:</span> <span>3019019882/301901001</span></p>
+			<p><span>Sicil Numarası:</span> <span>1163025058162</span></p>
+		</div>
+
+		<div id="add">
+			<div>
+				<div class=address-block id="post">
+					<img src="..\design\pictures\post-address.png">
+					<p><strong>Posta adresi:</strong> &nbsp;&nbsp;Yuri Selensky/Bakhtemirskiy 13/5, ofis 306, Astrakhan</p>
+				</div>
+				<div class="address-block" id="ur">
+					<img src="..\design\pictures\address.png">
+					<p><strong>Kayıtlı adresi:</strong> &nbsp;&nbsp;Yuri Selensky/Bakhtemirskiy 13/5, ofis 306, Astrakhan</p>
+				</div>
+			</div>
+			<div id="map"></div>
+		</div>
+
+		<div class="requisite" id="second-rq">
+			<p><span>Telefonu sanatçı:</span> <span>8(908)611-92-51 Saprykin Dimitri Aleksandrovich</span></p>
+			<p><span>WhatsApp:</span> <span>8(937)823-50-01</span></p>
+			<p><span>Posta kodu:</span> <span>414056</span></p>
+			<p><span>E-posta adresi:</span> <span>woodex_info@mail.ru</span></p>
+			<p><span>Vergi Kimlik Numarası/Neden kodu kayıt etme:</span> <span>3019019882/301901001</span></p>
+			<p><span>Sicil Numarası:</span> <span>1163025058162</span></p>
+		</div>
+	</div>
+
+	<div id="forest"></div>
+	
+	<div id="bottom-block">
+
+		<div id="contacts">
+			<span>Kişiler</span>
+			<div  id="phone">
+				<img src="..\design\pictures\phone.png">
+				<div class="bottom-text">Telefon:</div>
+				<div><a href="#">8(908)611-92-51</a></div>
+			</div>
+
+			<div id="mail">
+				<img src="..\design\pictures\mail.png">
+				<div class="bottom-text">Email:</div>
+				<div><a href="mailto:woodex_info@mail.ru">woodex_info@mail.ru</a></div>
+			</div>
+		</div>
+
+		<div id="address">
+			<span class="bottom-text">Adres</span>
+			<div>
+				<img src="..\design\pictures\location.png">
+				<span>Yuri Selensky/Bakhtemirskiy 13/5, ofis 306, Astrakhan</span>
+			</div>
+		</div>
+
+		<div id="bottom-lang">
+			<div class="bottom-text"> Dil</div>
+			<div>
+				<select id="sel" onchange="op()">
+					<option>Русский</option>
+					<option>English</option>
+					<option>فارسی</option>
+					<option>العربية</option>
+					<option selected>Türk</option>
+				</select>
+			</div>
+		</div>
+
+	</div>
+
+	<script>
+		
+		function op()
+		{
+			var u = document.getElementById('sel');
+			switch (u.selectedIndex) {
+				case 0:
+					window.location.href = "../russian/Contacts.html";
+					break;
+				case 1:
+					window.location.href = "../english/Contacts.html";
+					break;
+				case 2:
+					window.location.href = "../farsi/Contacts.html";
+					break;
+				case 3:
+					window.location.href = "../arab/Contacts.html";
+					break;
+				case 4:
+					window.location.href = "../turkish/Contacts.html";
+					break;				
+			}
+		}
+	</script>
+
+	<script>
+		function initMap()
+		{
+			var CenterLatLng = new google.maps.LatLng(46.367599, 48.044529);
+			var mapOptions=
+			{
+				center: CenterLatLng,
+				zoom: 18
+			};
+			var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+		}
+		google.maps.event.addDomListener (window, "load", initMap);
+	</script>
+
+</body>
+</html>

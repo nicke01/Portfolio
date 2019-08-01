@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>WOODEX</title>
+
+	<meta charset="utf-8">
+	<meta http-equiv="Content-language" content="tü-TÜ">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<meta name="description" content="Biz sipariş kereste, farklı kesit ve uzunlukları kaliteli ahşap çeşitleri. Tüm kereste geçti, ilgili uzmanlık...">
+	<meta name="keynames" content="woodex kereste ahşap orman alacağım satış astrakhan satın al içinde çam ladin sipariş dekolte  iğne yapraklı kayalar ucuz">
+	<meta name="author" content="nikolai.only.original@mail.ru">
+
+	<link rel="shortcut icon" href="..\design\pictures\HugeIcon.png">
+	<link rel="stylesheet" href="..\design\MainPageTurk.css">
+</head>
+<body>
+
+	<div id="top">
+		<div id="heading">
+			<div id="phone-menu">
+				<button class="menu-toggle" id="t"></button>
+
+				<nav>
+				<div id="a">&#8249;</div>
+				  <ul class="menu" id="m">
+				    <li data-text="BİZİM HAKKIMIZDA"><a href="./AboutUs.html">BİZİM HAKKIMIZDA</a></li>
+				    <li data-text="KATALOG"><a href="./Catalog.html">KATALOG</a></li>
+				    <li data-text="ÖDEME VE TESLİMAT"><a href="./Payment.html">ÖDEME VE TESLİMAT</a></li>
+				    <li data-text="KİŞİLER"><a href="./Contacts.html">KİŞİLER</a></li>
+				    <li data-text="DİL" id="l">DİL</li>
+				  </ul>
+				  <ul class="lang-change" id ="c">
+				  	<li data-text="Русский"><a href="../russian/MainPage.html">Русский<a></li>
+				  	<li data-text="English"><a href="../english/MainPage.html">English</a></li>
+				  	<li data-text="فارسی"><a href="../farsi/MainPage.html">فارسی</a></li>
+				  	<li data-text="العربية"><a href="../arab/MainPage.html">العربية</a></li>
+				  	<li data-text="Türk"><a href="../turkish/MainPage.html">Türk</a></li>
+				  </ul>
+				</nav>
+
+				<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+				<script>
+					$('button').on('click', function(){$('body').toggleClass('open');});
+				</script>
+				<script>
+					var l = document.getElementById("l");
+					var c = document.getElementById("c");
+					var m = document.getElementById("m");
+					var t = document.getElementById("t");
+					var a = document.getElementById("a");
+					l.onclick = function change()
+					{
+						c.setAttribute("style", "display: block;");
+						m.setAttribute("style", "display: none");
+						t.setAttribute("style", "display: none");
+						a.setAttribute("style", "display: block");
+					}
+					a.onclick = function second_change()
+					{
+						c.setAttribute("style", "display: none;");
+						m.setAttribute("style", "display: block");
+						t.setAttribute("style", "display: block");
+						a.setAttribute("style", "display: none");
+					}
+				</script>
+			</div>
+			<a title="ANA SAYFA" href="./MainPage.html"><img src="..\design\pictures\Logo.PNG"></a>
+		</div>
+
+		<div id="menu">
+			<ul id="top-menu">
+				<li class="menu_it"><a href="./AboutUs.html">BİZİM HAKKIMIZDA</a></li>
+				<li class="menu_it"><a href="./Catalog.html">KATALOG</a></li>
+				<li class="menu_it"><a href="./Payment.html">ÖDEME VE TESLİMAT</a></li>
+				<li class="menu_it"><a href="./Contacts.html">KİŞİLER</a></li>
+				<li class="menu_it"><a>DİL</a>
+					<ul id="top-lang">
+						<li><a href="../russian/MainPage.html"><img src="..\design\pictures\lang\russia.png">Русский</a></li>
+						<li><a href="../english/MainPage.html"><img src="..\design\pictures\lang\english.png">English</a></li>
+						<li><a href="../farsi/MainPage.html"><img src="..\design\pictures\lang\farsi.png">فارسی</a></li>
+						<li><a href="../arab/MainPage.html"><img src="..\design\pictures\lang\arabish.png">العربية</a></li>
+						<li><a href="../turkish/MainPage.html"><img src="..\design\pictures\lang\turkish.png">Türk</a></li>
+					</ul>
+				</li>	
+			</ul>
+		
+		</div>
+	</div>
+
+	<div id="forest-title">
+		<p>LLC «WOODEX»</p> <p>SATIŞ VE TESLİMAT <br>KERESTE <br>PERM KENARLARI, <br>ARKHANGELSK VE<br>SVERDLOVSK BÖLGESİ</p>	
+	</div>
+
+	<div class="main" id="quality">
+		<div id="first-img">
+			<img src="..\design\pictures\MainPhotos\MP7.jpg">
+		</div>
+		<div id="first-text">
+			<p>Kalite garantisi</p> <p>Şirket «Woodex» birçok ürün, özenle üretilen deneyimli profesyoneller tarafından. Her türlü kereste geçti ilgili inceleme, neden olsun sadece kanıtlanmış bir ürün.</p>
+			<a href="./AboutUs.html"><p>Ayrıntılı</p></a>
+		</div>
+	</div>
+
+	<div class="main" id="demand">
+		<img src="..\design\pictures\MainPhotos\MP7.jpg">
+		<div id="second-text">
+			<p>Talep ürünlerimizin</p> <p>Firmamız birçok iğne yapraklı kereste – en çok aranan malzeme mobilya sanayi üretiminde ahşap yapılar ve inşaat sektöründe.</p>		
+			<a href="./AboutUs.html"><p>Ayrıntılı</p></a>
+		</div>
+		<div id="second-img">
+			<img src="..\design\pictures\MainPhotos\MP30.jpg">
+		</div>
+	</div>
+
+	<div class="main" id="prepare">
+		<div id="third-img">
+			<img src="..\design\pictures\MainPhotos\MP27.jpg">
+		</div>
+		<div id="third-text">
+			<p>Hazırlık kuru orman</p> <p>Malzemeler ahşap kurutulmuş açık bir şekilde sokakta ya da kullanarak özel elektrikli fırın ve kurutma kameralar. Minimum değerler nem önlemek kırılganlık ağaç.</p>
+			<a href="./AboutUs.html"><p>Ayrıntılı</p></a>
+		</div>
+	</div>
+
+
+	<div id="dignity">
+		<p>
+			ONURUNA SAHİP BİZİM KERESTE
+		</p>
+		<p> 
+			Ana avantajı, herhangi bir ahşap — doğal ve toksik güvenlik. Bu özellik aşmak için hiçbir sentetik analogları. Kereste, köknar vardır ve onun yadsınamaz avantajları:
+		</p>
+		<p>
+			&nbsp;&nbsp;-&nbsp;&nbsp;Hafiflik, düşük yoğunluklu ve düşük ısı iletkenliği;<br>
+			&nbsp;&nbsp;-&nbsp;&nbsp;Swirls küçük çaplı eğlenceli bir çizim oluşturmak;<br>
+			&nbsp;&nbsp;-&nbsp;&nbsp;Sıradışı ahşap rengi orijinal görünüyor iç. Ladin verebilir açık pembe veya açık altın renk;<br>
+			&nbsp;&nbsp;-&nbsp;&nbsp;Homojen doku, hangi kereste düzgünlüğünü ve pürüzsüzlük<br>
+		</p>
+	</div>
+
+	<div id="forest"></div>
+
+	<div id="bottom-block">
+
+		<div id="contacts">
+			<span>Kişiler</span>
+			<div  id="phone">
+				<img src="..\design\pictures\phone.png">
+				<div class="bottom-text">Telefon:</div>
+				<div><a href="#">8(908)611-92-51</a></div>
+			</div>
+
+			<div id="mail">
+				<img src="..\design\pictures\mail.png">
+				<div class="bottom-text">Email:</div>
+				<div><a href="mailto:woodex_info@mail.ru">woodex_info@mail.ru</a></div>
+			</div>
+		</div>
+
+		<div id="address">
+			<span class="bottom-text">Adres</span>
+			<div>
+				<img src="..\design\pictures\location.png">
+				<span>Yuri Selensky/Bakhtemirskiy 13/5, ofis 306, Astrakhan</span>
+			</div>
+		</div>
+
+		<div id="bottom-lang">
+			<div class="bottom-text"> Dil</div>
+			<div>
+				<select id="sel" onchange="op()">
+					<option>Русский</option>
+					<option>English</option>
+					<option>فارسی</option>
+					<option>العربية</option>
+					<option selected>Türk</option>
+				</select>
+			</div>
+		</div>
+
+	</div>
+
+	<script>
+		
+		function op()
+		{
+			var u = document.getElementById('sel');
+			switch (u.selectedIndex) {
+				case 0:
+					window.location.href = "../russian/MainPage.html";
+					break;
+				case 1:
+					window.location.href = "../english/MainPage.html";
+					break;
+				case 2:
+					window.location.href = "../farsi/MainPage.html";
+					break;
+				case 3:
+					window.location.href = "../arab/MainPage.html";
+					break;
+				case 4:
+					window.location.href = "../turkish/MainPage.html";
+					break;				
+			}
+		}
+	</script>
+
+</body>
+</html>
