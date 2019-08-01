@@ -1,39 +1,3 @@
-/*------------------- Waypoints -------------------*/
-
-$(document).ready(function() {
-
-	$('.wp1').waypoint(function() {
-		$('.wp1').addClass('animated fadeInLeft');
-	}, {
-		offset: '75%'
-	});
-	$('.wp2').waypoint(function() {
-		$('.wp2').addClass('animated fadeInUp');
-	}, {
-		offset: '75%'
-	});
-	$('.wp3').waypoint(function() {
-		$('.wp3').addClass('animated fadeInDown');
-	}, {
-		offset: '55%'
-	});
-	$('.wp4').waypoint(function() {
-		$('.wp4').addClass('animated fadeInDown');
-	}, {
-		offset: '75%'
-	});
-	$('.wp5').waypoint(function() {
-		$('.wp5').addClass('animated fadeInUp');
-	}, {
-		offset: '75%'
-	});
-	$('.wp6').waypoint(function() {
-		$('.wp6').addClass('animated fadeInDown');
-	}, {
-		offset: '75%'
-	});
-
-});
 
 /*------------------- Slide-In Nav -------------------*/
 
@@ -71,32 +35,6 @@ document.querySelector("#nav-toggle").addEventListener("click", function() {
 	this.classList.toggle("active");
 });
 
-/*------------------- Overlays -------------------*/
-
-$(document).ready(function(){
-    if (Modernizr.touch) {
-        $(".close-overlay").removeClass("hidden");
-        $(".img").click(function(e){
-            if (!$(this).hasClass("hover")) {
-                $(this).addClass("hover");
-            }
-        });
-        $(".close-overlay").click(function(e){
-            e.preventDefault();
-            e.stopPropagation();
-            if ($(this).closest(".img").hasClass("hover")) {
-                $(this).closest(".img").removeClass("hover");
-            }
-        });
-    } else {
-        $(".img").mouseenter(function(){
-            $(this).addClass("hover");
-        })
-        .mouseleave(function(){
-            $(this).removeClass("hover");
-        });
-    }
-});
 
 /*------------------- Flexsliders -------------------*/
 
@@ -108,9 +46,6 @@ $(window).load(function() {
 		controlNav: true,
 		touch: false,
 		pauseOnHover: true,
-		start: function() {
-			$.waypoints('refresh');
-		}
 	});
 
 	$('#servicesSlider').flexslider({
@@ -119,9 +54,6 @@ $(window).load(function() {
 		controlNav: true,
 		touch: true,
 		pauseOnHover: true,
-		start: function() {
-			$.waypoints('refresh');
-		}
 	});
 
 	$('#teamSlider').flexslider({
@@ -130,9 +62,6 @@ $(window).load(function() {
 		controlNav: true,
 		touch: true,
 		pauseOnHover: true,
-		start: function() {
-			$.waypoints('refresh');
-		}
 	});
 
 });

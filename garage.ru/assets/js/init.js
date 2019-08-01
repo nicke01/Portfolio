@@ -1,18 +1,12 @@
-
-/*-----------------------------------------------------------------------------------*/
-/*  DOCUMENT READY
-/*-----------------------------------------------------------------------------------*/
 $(document).ready(function(){
     'use strict';
 
-    // SLIDERS
     jQuery('#headerwrap.agency-slider').backstretch([
         "assets/img/hookah.jpg",
         "assets/img/bar.jpg",
         "assets/img/pool.jpg"
       ], {duration: 6000, fade: 500});
 
-    // OWL CAROUSEL //
     $('.owl-carousel').owlCarousel({
       navigation: false,
       pagination: false,
@@ -42,7 +36,6 @@ $(document).ready(function(){
         toggle: false
     });
 
-    // ANIMATED ONLY IF NOT AT TOP OF PAGE ON LOAD //
     var $win = $(window);
     if ($win.scrollTop() == 0)
         jQuery('.navbar-fixed-top').addClass('wow');
@@ -52,7 +45,6 @@ $(document).ready(function(){
 
 
 
-    //NEAT VID EMBEDS
     $().prettyEmbed({ useFitVids: true });
     
     var magnificPopup = jQuery.magnificPopup.instance;
@@ -68,7 +60,6 @@ $(document).ready(function(){
         }
     });
 
-    //BACK TO TOP
     $('a#back-to-top').on('click', function(event){
       event.preventDefault();
       $('html, body').animate({
@@ -78,7 +69,6 @@ $(document).ready(function(){
 
     $('.vertical-center').flexVerticalCenter({ cssAttribute: 'padding-top' });
 
-    //CONTACT FORM
     $('#contactform').submit(function(){
       var action = $(this).attr('action');
       $("#message").slideUp(750,function() {
@@ -105,7 +95,7 @@ $(document).ready(function(){
     $(".rotate").textrotator({
       animation: "dissolve",
       separator: ",",
-      speed: 6500 // How many milliseconds until the next word show.
+      speed: 6500 
     });
 
     $('.match-height').matchHeight({
@@ -150,7 +140,6 @@ $(document).ready(function(){
         }        
     });
 
-    //SIDE NAV MOBILE
     $('#side-menu-toggle').on('click', function(event){
       event.preventDefault();
       $(this).toggleClass('open');
@@ -159,12 +148,10 @@ $(document).ready(function(){
       $('#side-wrapper').toggle();
     });
 
-    // ONEPAGER XTRA //
     $('body').scrollspy({
         target: '.navbar-fixed-top'
     });
 
-    // FULLSCREEN FIX //
     var windowHeight = $(window).innerHeight();
     var isMobileDevice = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
     if( !isMobileDevice ) {
@@ -174,13 +161,11 @@ $(document).ready(function(){
         });
     }
 
-    // ANIMATE ONCE PAGE LOAD IS OVER //
     Pace.on("done", function(){
         new WOW().init();
         $(window).trigger('resize');
     });
 
-    // SEARCH //
     $('a[href="#search"]').on('click', function(event) {
         event.preventDefault();
         $('#search-wrapper').addClass('open');
@@ -198,7 +183,6 @@ $(document).ready(function(){
         return false;
     })
 
-    // ONEPAGER //
     $('a.page-scroll').on('click', function(event){
         var $anchor = $(this);
         $('html, body').stop().animate({
@@ -209,7 +193,6 @@ $(document).ready(function(){
 
     $('.entry-content table, #post-content table').addClass('table');
     $('.entry-content dl, #post-content dl').addClass('dl-horizontal');
-    //$(window).trigger('resize');
 
     $('.flexpanel').flexpanel({
         animation: 'slide',
@@ -267,9 +250,6 @@ $(document).ready(function(){
     });
 });
 
-/*-----------------------------------------------------------------------------------*/
-/*  WINDOW LOAD
-/*-----------------------------------------------------------------------------------*/
 $(window).load(function() {
     'use strict';
 
@@ -340,16 +320,4 @@ $(window).load(function() {
             return false;
         });
     }
-
-    // PRELOADING SCREEN
-    /*
-    jQuery('a:not([target="_blank"]):not([href*=#]):not([href^=mailto]):not(.fancybox-media):not(.btn.responsive-menu):not(a[href$="jpg"]):not([href$="jpeg"]):not(a[href$="gif"]):not(a[href$="png"]):not(a.ajax-link):not(a.side-menu-trigger hidden-xs)').on('click', function(){
-      var href = jQuery(this).attr('href');
-      jQuery('.preloader').fadeIn(300);
-      setTimeout(function(){
-        window.location = href;
-      }, 300);
-      return false;
-    });
-*/
 });

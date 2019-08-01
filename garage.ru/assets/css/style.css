@@ -2442,3 +2442,9 @@ footer.white-wrapper .social-links li a {
         padding: 50px 0;
     }
 }
+
+@media screen and (max-width: 900px) {
+    #hookah  {
+        display: none;
+    }
+}

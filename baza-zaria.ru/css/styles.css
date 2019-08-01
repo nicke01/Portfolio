@@ -568,6 +568,16 @@ ul.slides li {
 	height: 100%;
 }
 
+@media screen and (max-width: 992px) {
+	.w3 {
+		display: none;
+	}
+
+	.subscribe input[type=text] {
+		width: 90%;
+	}
+}
+
 .col-md-4 img { 
 	border-radius: 20px; 
 }
