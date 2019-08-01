@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Quick Coins</title>
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <!-- Main Icon -->
+    <link rel="icon" href="../style/images/png/main-icon.png">
+    <!-- Theme styles -->
+    <link rel="stylesheet" href="../style/css/global.css">
+    <link rel="stylesheet" href="../style/css/nightMode.css">
+    <link rel="stylesheet" href="../style/css/games/twenty-one.css">
+    <link rel="stylesheet" href="../style/css/cross-platform.css">
+  </head>
+  <body>
+    <!-- Preloader -->
+    <div id="page-preloader" class="preloader">
+      <div class='sk-three-bounce' id="loader">
+        <div class='sk-bounce-1 sk-child'></div>
+        <div class='sk-bounce-2 sk-child'></div>
+        <div class='sk-bounce-3 sk-child'></div>
+      </div>
+    </div>
+    <header>
+      <a href="twenty-one-join.html"><img src="../style/images/svg/back-arrow-white.svg" alt=""></a>
+      <span class="uppercase-bold-1">двадцать одно</span>
+      <img src="../style/images/png/placeholder.png" alt="">
+    </header>
+    <article>
+      <!-- Version of site intended for PC -->
+      <section id="pc-version">
+        <div id="plug"><img src="../style/images/svg/plug.svg" alt=""></div>
+      </section>
+      <!-- Version of site intended for Phones -->
+      <section id="phone-version">
+        <div id="gameBoard">
+            <div id="oponentsSide">
+              <div class="usersPhoto">
+                <canvas id="oponentsTime" width="50px" height="50px"></canvas>
+                <img src="../style/images/svg/users-photo.svg" alt="">
+              </div>
+              <div id="oponentsCards">
+                <img src="../style/images/cards/cards-body.svg" alt="">
+                <img src="../style/images/cards/cards-body.svg" alt="">
+                <img src="../style/images/cards/cards-body.svg" alt="">
+                <img src="../style/images/cards/cards-body.svg" alt="">
+                <img src="../style/images/cards/cards-body.svg" alt="">
+              </div>
+            </div>
+            <div id="betCoins">
+              <span class="regular-3">0</span>
+              <img src="../style/images/svg/coins-white.svg" alt="">
+            </div>
+            <div id="mySide">
+              <div id="myCards">
+                <img src="../style/images/cards/cards-body.svg" alt="">
+                <img src="../style/images/cards/cards-body.svg" alt="">
+                <img src="../style/images/cards/cards-body.svg" alt="">
+                <img src="../style/images/cards/cards-body.svg" alt="">
+                <img src="../style/images/cards/cards-body.svg" alt="">
+              </div>
+              <div class="usersPhoto">
+                <canvas id="myTime" width="50px" height="50px"></canvas>
+                <img src="../style/images/svg/users-photo.svg" alt="">
+              </div>
+            </div>
+        </div>
+        <div id="betField">
+          <div id="gamePanel">
+            <div>Ваш ход</div>
+            <div id="Buttons">
+              <button type="button" id="stopButton" class="smallButton" name="button">Хватит</button>
+              <button type="button" id="moreButton" class="smallButton" name="button">Больше</button>
+            </div>
+          </div>
+          <div id="bet">
+            <div id="balance">
+              <span>Баланс:</span>
+              <div class="amountOfCoins">
+                <span>10110180,282</span>
+                <img class="black" src="../style/images/svg/coins.svg" alt="">
+                <img class="white" src="../style/images/svg/coins-white.svg" alt="">
+              </div>
+            </div>
+            <div id="sumOfBet">
+              <span>Ставка:</span>
+              <div class="amountOfCoins">
+                <span>5000,000</span>
+                <img class="black" src="../style/images/svg/coins.svg" alt="">
+                <img class="white" src="../style/images/svg/coins-white.svg" alt="">
+              </div>
+            </div>
+          </div>
+          <button type="button" name="button" class="hugeButton" id="makeBet">Сделать ставку</button>
+        </div>
+      </section>
+      <section id="phone-games-bg">
+        <img src="../style/images/png/games-bg.png" id="bgImg" alt="">
+      </section>
+    </article>
+    <audio id="cardSound-1" src="../style/sounds/card-1.mp3" preload="auto" controls></audio>
+    <audio id="cardSound-2" src="../style/sounds/card-2.mp3" preload="auto" controls></audio>
+    <audio id="cardSound-3" src="../style/sounds/card-3.mp3" preload="auto" controls></audio>
+    <audio id="cardSound-4" src="../style/sounds/card-5.mp3" preload="auto" controls></audio>
+    <audio id="cardSound-5" src="../style/sounds/cards-shuffle.mp3" preload="auto" controls></audio>
+    <footer>
+      <a href="../home/homePage.html"><img class="black" src="../style/images/svg/home.svg" alt=""><img class="white" src="../style/images/svg/home-white.svg" alt=""></a>
+      <a href=""><img src="../style/images/svg/games-selected.svg" alt=""></a>
+      <a href="../mining/miningPage.html"><img class="black" src="../style/images/svg/mining.svg" alt=""><img class="white" src="../style/images/svg/mining-white.svg" alt=""></a>
+      <a href="../topcharts/topchartsPage.html"><img class="black" src="../style/images/svg/statistic.svg" alt=""><img class="white" src="../style/images/svg/statistic-white.svg" alt=""></a>
+    </footer>
+    <!-- Script running preloader -->
+    <script src="../scripts/preloader.js"></script>
+
+    <script src="../scripts/twenty-one.js"></script>
+
+    <script src="../scripts/twentyOneAdaptation.js"></script>
+    <!-- Script triggered by turning on "night mode" -->
+    <script src="../scripts/nightMode.js"></script>
+  </body>
+</html>
